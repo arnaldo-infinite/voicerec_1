@@ -78,7 +78,7 @@ public class SpeechRecognizerMain {
 		//Uncomment this line of code if you want the recognizer to recognize every word of the language 
 		//you are using , here it is English for example	
 		//====================================================================================
-		configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
+//		configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
 		
 		//====================================================================================
 		//=====================READ THIS!!!===============================================
@@ -86,9 +86,9 @@ public class SpeechRecognizerMain {
 		//====================================================================================
 		
 		// Grammar
-//		configuration.setGrammarPath("resources/grammar");
-//		configuration.setGrammarName("grammars");
-//		configuration.setUseGrammar(true);
+		configuration.setGrammarPath("resources/grammar");
+		configuration.setGrammarName("grammars");
+		configuration.setUseGrammar(true);
 		
 		try {
 			recognizer = new LiveSpeechRecognizer(configuration);
