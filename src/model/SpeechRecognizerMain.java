@@ -87,7 +87,7 @@ public class SpeechRecognizerMain {
 		
 		// Grammar
 		configuration.setGrammarPath("resources/grammar");
-		configuration.setGrammarName("grammars");
+		configuration.setGrammarName("grammar");
 		configuration.setUseGrammar(true);
 		
 		try {
